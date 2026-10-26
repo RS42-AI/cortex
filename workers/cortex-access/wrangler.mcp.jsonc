@@ -1,0 +1,40 @@
+// Deployment example: configure your own hostname and limiter namespace.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-cortex-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": false,
+      "persist": true,
+    },
+  },
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "1003",
+      "simple": {
+        "limit": 300,
+        "period": 60,
+      },
+    },
+  ],
+  "vars": {
+    "CHAT_ENABLED": "false",
+    "CORTEX_ALLOWED_ORIGINS": "",
+    "ENVIRONMENT": "production",
+    "MCP_ENABLED": "true",
+    "MCP_ALLOWED_HOSTNAMES": "mcp.example.com",
+    "MCP_ALLOWED_ORIGINS": "",
+    "MODEL_API_URL": "",
+    "MODEL_API_GATEWAY_ID": "",
+    "MODEL_NAME": "",
+  },
+}

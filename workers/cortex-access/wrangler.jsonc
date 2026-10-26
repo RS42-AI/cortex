@@ -1,0 +1,85 @@
+// Deployment example: configure your own resources and origins before use.
+// Local development uses wrangler.dev.jsonc with no remote AI binding.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-cortex-chat",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+  "ai": {
+    "binding": "AI",
+  },
+  "vectorize": [
+    {
+      "binding": "CORTEX_VECTORIZE",
+      "index_name": "my-cortex-production",
+    },
+  ],
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": {
+        "limit": 60,
+        "period": 60,
+      },
+    },
+  ],
+  "vars": {
+    "CHAT_ENABLED": "true",
+    "CORTEX_ALLOWED_ORIGINS": "https://cortex.example.com",
+    "ENVIRONMENT": "production",
+    "MCP_ENABLED": "false",
+    "MCP_ALLOWED_HOSTNAMES": "",
+    "MCP_ALLOWED_ORIGINS": "",
+    "MODEL_API_URL": "",
+    "MODEL_API_GATEWAY_ID": "my-cortex-chat",
+    "MODEL_NAME": "@cf/openai/gpt-oss-120b",
+    "RETRIEVAL_EMBEDDING_MODEL": "@cf/baai/bge-m3",
+    "RETRIEVAL_SEMANTIC_FLOOR": "0.46",
+  },
+  "env": {
+    "preview": {
+      "workers_dev": false,
+      "preview_urls": true,
+      "ai": {
+        "binding": "AI",
+      },
+      "vectorize": [
+        {
+          "binding": "CORTEX_VECTORIZE",
+          "index_name": "my-cortex-preview",
+        },
+      ],
+      "ratelimits": [
+        {
+          "name": "RATE_LIMITER",
+          "namespace_id": "1002",
+          "simple": {
+            "limit": 60,
+            "period": 60,
+          },
+        },
+      ],
+      "vars": {
+        "CHAT_ENABLED": "true",
+        "CORTEX_ALLOWED_ORIGINS": "https://preview.cortex.example.com",
+        "ENVIRONMENT": "production",
+        "MCP_ENABLED": "false",
+        "MCP_ALLOWED_HOSTNAMES": "",
+        "MCP_ALLOWED_ORIGINS": "",
+        "MODEL_API_URL": "",
+        "MODEL_API_GATEWAY_ID": "my-cortex-chat-preview",
+        "MODEL_NAME": "@cf/openai/gpt-oss-120b",
+        "RETRIEVAL_EMBEDDING_MODEL": "@cf/baai/bge-m3",
+        "RETRIEVAL_SEMANTIC_FLOOR": "0.46",
+      },
+    },
+  },
+}

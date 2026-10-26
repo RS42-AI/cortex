@@ -1,0 +1,46 @@
+{
+  "name": "@rs42/cortex-access",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.27.0",
+  "scripts": {
+    "check": "pnpm run validate:corpus && pnpm run validate:retrieval-manifest && tsc --noEmit && prettier . --check && pnpm run check:chat && pnpm run check:mcp-preview",
+    "check:chat": "XDG_CONFIG_HOME=.wrangler/config WRANGLER_LOG_PATH=.wrangler/wrangler.log wrangler deploy --env=\"\" --dry-run --outdir .wrangler/dry-run-chat",
+    "check:mcp-preview": "XDG_CONFIG_HOME=.wrangler/config WRANGLER_LOG_PATH=.wrangler/wrangler.log wrangler deploy --config wrangler.mcp.jsonc --dry-run --outdir .wrangler/dry-run-mcp-preview",
+    "format": "prettier . --write",
+    "test": "vitest run",
+    "sync:corpus": "node --experimental-strip-types scripts/sync-corpus.ts",
+    "validate:corpus": "node --experimental-strip-types scripts/validate-corpus.ts",
+    "build:retrieval-manifest": "node --experimental-strip-types scripts/build-retrieval-manifest.ts",
+    "validate:retrieval-manifest": "node --experimental-strip-types scripts/validate-retrieval-manifest.ts",
+    "evaluate:retrieval": "node --experimental-strip-types scripts/evaluate-retrieval.ts",
+    "benchmark:semantic:qmd": "node --experimental-strip-types scripts/benchmark-qmd-semantic.ts",
+    "index:vectorize": "node --experimental-strip-types scripts/index-vectorize.ts",
+    "snapshot:vectorize": "node --experimental-strip-types scripts/snapshot-vectorize-semantic.ts",
+    "evaluate:chat": "node scripts/evaluate-chat-preview.mjs",
+    "verify:mcp": "node scripts/verify-mcp.mjs",
+    "verify:retrieval-loopback": "vitest run test/retrieval/loopback.test.ts",
+    "dev:mock-model": "node scripts/mock-model-server.mjs",
+    "dev": "wrangler dev --config wrangler.dev.jsonc --local --ip 127.0.0.1 --port 8788",
+    "deploy": "wrangler deploy --env=\"\"",
+    "deploy:mcp-preview": "wrangler deploy --config wrangler.mcp.jsonc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "agents": "0.20.1",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20260808.1",
+    "@modelcontextprotocol/client": "2.0.0",
+    "@types/node": "25.0.10",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10",
+    "wrangler": "4.120.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

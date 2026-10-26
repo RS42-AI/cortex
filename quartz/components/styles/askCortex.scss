@@ -1,0 +1,450 @@
+@use "../../styles/variables.scss" as *;
+
+body.ask-cortex-open {
+  overflow: hidden;
+}
+
+.ask-cortex {
+  --ask-cortex-accent: var(--secondary);
+  --ask-cortex-accent-soft: color-mix(in srgb, var(--secondary) 12%, var(--light));
+
+  & > .ask-cortex-trigger {
+    position: fixed;
+    right: clamp(1rem, 3vw, 2rem);
+    bottom: clamp(1rem, 3vw, 2rem);
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-height: 3rem;
+    padding: 0.65rem 1rem 0.65rem 0.7rem;
+    border: 1px solid color-mix(in srgb, var(--secondary) 35%, var(--light));
+    border-radius: 999px;
+    background: var(--dark);
+    box-shadow: 0 12px 36px rgba(20, 31, 40, 0.2);
+    color: var(--light);
+    font: 600 0.95rem/1 var(--bodyFont);
+    cursor: pointer;
+    transition:
+      transform 160ms ease,
+      box-shadow 160ms ease,
+      opacity 160ms ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(20, 31, 40, 0.25);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--tertiary);
+      outline-offset: 3px;
+    }
+  }
+
+  &.is-open > .ask-cortex-trigger {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.ask-cortex-trigger-mark {
+  display: grid;
+  width: 1.65rem;
+  height: 1.65rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--tertiary);
+  color: #142126;
+  font: 700 1rem/1 var(--titleFont);
+}
+
+.ask-cortex-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 910;
+  background: rgba(15, 24, 29, 0.32);
+  backdrop-filter: blur(2px);
+}
+
+.ask-cortex-panel {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 920;
+  display: grid;
+  grid-template-rows: auto minmax(12rem, 1fr) auto auto auto;
+  width: min(29rem, calc(100vw - 2rem));
+  height: min(42rem, calc(100dvh - 2rem));
+  overflow: hidden;
+  border: 1px solid var(--lightgray);
+  border-radius: 1rem;
+  background: var(--light);
+  box-shadow: 0 24px 80px rgba(15, 24, 29, 0.3);
+  color: var(--darkgray);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.ask-cortex-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.2rem 1rem;
+  border-bottom: 1px solid var(--lightgray);
+  background:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--tertiary) 24%, transparent),
+      transparent 45%
+    ),
+    var(--light);
+
+  h2 {
+    margin: 0.1rem 0 0.3rem;
+    color: var(--dark);
+    font-size: 1.45rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  .ask-cortex-eyebrow {
+    color: var(--secondary);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+}
+
+.ask-cortex-close {
+  display: grid;
+  flex: 0 0 auto;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border: 1px solid var(--lightgray);
+  border-radius: 50%;
+  background: var(--light);
+  color: var(--darkgray);
+  font: 400 1.45rem/1 var(--bodyFont);
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--gray);
+    color: var(--dark);
+  }
+}
+
+.ask-cortex-messages {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1rem 1.2rem;
+  scroll-behavior: smooth;
+}
+
+.ask-cortex-empty {
+  display: grid;
+  align-content: center;
+  min-height: 100%;
+  text-align: center;
+
+  > p {
+    max-width: 22rem;
+    margin: 0 auto 1rem;
+    color: var(--gray);
+    font-size: 0.93rem;
+  }
+}
+
+.ask-cortex-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  button {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid color-mix(in srgb, var(--secondary) 30%, var(--lightgray));
+    border-radius: 999px;
+    background: var(--ask-cortex-accent-soft);
+    color: var(--secondary);
+    font: 600 0.8rem/1.2 var(--bodyFont);
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--secondary);
+    }
+  }
+}
+
+.ask-cortex-message {
+  width: fit-content;
+  max-width: 88%;
+  margin: 0 0 0.9rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 0.85rem 0.85rem 0.85rem 0.2rem;
+  background: color-mix(in srgb, var(--lightgray) 35%, var(--light));
+
+  &.ask-cortex-message-user {
+    margin-left: auto;
+    border-color: color-mix(in srgb, var(--secondary) 25%, var(--lightgray));
+    border-radius: 0.85rem 0.85rem 0.2rem;
+    background: var(--ask-cortex-accent-soft);
+  }
+
+  &.is-pending {
+    opacity: 0.72;
+  }
+}
+
+.ask-cortex-message-label,
+.ask-cortex-message-content,
+.ask-cortex-sources p {
+  margin: 0;
+}
+
+.ask-cortex-message-label {
+  margin-bottom: 0.25rem;
+  color: var(--secondary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ask-cortex-message-content {
+  color: var(--darkgray);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.ask-cortex-sources {
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--lightgray);
+
+  > p {
+    color: var(--gray);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0.25rem 0 0;
+    padding-left: 1rem;
+  }
+
+  li,
+  a {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+}
+
+.ask-cortex-thinking {
+  display: flex;
+  align-items: center;
+  gap: 0.28rem;
+  width: fit-content;
+  padding: 0.4rem 0.1rem;
+  color: var(--gray);
+
+  span {
+    width: 0.32rem;
+    height: 0.32rem;
+    border-radius: 50%;
+    background: var(--tertiary);
+    animation: cortex-thinking 1s ease-in-out infinite;
+
+    &:nth-child(2) {
+      animation-delay: 120ms;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 240ms;
+    }
+  }
+
+  em {
+    margin-left: 0.25rem;
+    font-size: 0.78rem;
+    font-style: normal;
+  }
+}
+
+@keyframes cortex-thinking {
+  50% {
+    opacity: 0.3;
+    transform: translateY(-2px);
+  }
+}
+
+.ask-cortex-error {
+  margin: 0;
+  padding: 0.65rem 1.2rem;
+  border-top: 1px solid color-mix(in srgb, #b54a4a 30%, var(--lightgray));
+  background: color-mix(in srgb, #b54a4a 8%, var(--light));
+  color: color-mix(in srgb, #b54a4a 82%, var(--dark));
+  font-size: 0.82rem;
+}
+
+.ask-cortex-form {
+  padding: 0.85rem 1.2rem 0.65rem;
+  border-top: 1px solid var(--lightgray);
+
+  > label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+.ask-cortex-composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.55rem;
+  padding: 0.45rem;
+  border: 1px solid var(--gray);
+  border-radius: 0.8rem;
+  background: var(--light);
+
+  &:focus-within {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--secondary) 16%, transparent);
+  }
+
+  textarea {
+    flex: 1;
+    min-height: 2.6rem;
+    max-height: 8rem;
+    resize: vertical;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--dark);
+    font: 400 0.92rem/1.35 var(--bodyFont);
+  }
+}
+
+.ask-cortex-send {
+  min-width: 4rem;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.7rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: var(--secondary);
+  color: var(--light);
+  font: 700 0.82rem/1 var(--bodyFont);
+  cursor: pointer;
+
+  &:disabled {
+    cursor: wait;
+    opacity: 0.65;
+  }
+}
+
+.ask-cortex-form-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  color: var(--gray);
+  font-size: 0.68rem;
+}
+
+.ask-cortex-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 1.2rem 0.8rem;
+
+  p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.69rem;
+    line-height: 1.3;
+  }
+}
+
+.ask-cortex-search-fallback {
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--secondary);
+  font: 600 0.72rem/1.3 var(--bodyFont);
+  text-decoration: underline;
+  text-underline-offset: 0.16rem;
+  cursor: pointer;
+}
+
+.ask-cortex button:focus-visible,
+.ask-cortex textarea:focus-visible,
+.ask-cortex a:focus-visible {
+  outline: 3px solid var(--tertiary);
+  outline-offset: 2px;
+}
+
+@media all and ($mobile) {
+  .ask-cortex > .ask-cortex-trigger {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .ask-cortex-panel {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    max-width: none;
+    height: min(44rem, 92dvh);
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .ask-cortex-header,
+  .ask-cortex-messages,
+  .ask-cortex-form,
+  .ask-cortex-footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .ask-cortex-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ask-cortex-form-meta span:last-child {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ask-cortex-trigger,
+  .ask-cortex-messages {
+    scroll-behavior: auto;
+    transition: none;
+  }
+
+  .ask-cortex-thinking span {
+    animation: none;
+  }
+}

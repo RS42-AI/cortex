@@ -1,0 +1,59 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Copyright (c) 2026 RS42 / Yandi Farinango
+
+The content of this repository — including all files under `content/`, all
+written notes, curriculum material, and prose — is licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0).
+
+## Summary (human-readable)
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit (link back to this
+  repository and name the author), provide a link to the license, and
+  indicate if changes were made. You may do so in any reasonable manner,
+  but not in any way that suggests the licensor endorses you or your use.
+- **NonCommercial** — You may not use the material for commercial purposes.
+  In particular, you may not sell courses, training programs, or paid
+  products built primarily on this content without explicit permission.
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+## Full legal text
+
+The full legal text of the CC BY-NC 4.0 license is available at:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+A human-readable summary (the Creative Commons "deed") is available at:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+## Scope
+
+This content license applies to:
+
+- All Markdown files under `content/`
+- All written prose, lessons, notes, frameworks, and curriculum material
+- All images, diagrams, and media authored by the maintainers in support
+  of the content
+
+It does NOT apply to:
+
+- Code (configuration, components, build tooling) — see [LICENSE](./LICENSE)
+- Third-party content quoted, embedded, or referenced under fair use,
+  which retains its original licensing
+- The underlying Quartz framework — see [LICENSE-quartz.txt](./LICENSE-quartz.txt)
+
+## Commercial use
+
+If you are interested in commercial use of this content (e.g., licensing the
+material for a paid course, corporate training program, or commercial
+publication), please reach out via https://rs42.ai or open a discussion on
+the GitHub repository.

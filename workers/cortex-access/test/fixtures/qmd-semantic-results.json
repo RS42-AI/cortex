@@ -1,0 +1,1386 @@
+{
+  "engine": "QMD vector search with local query expansion",
+  "model": "embeddinggemma-300M-Q8_0",
+  "corpusVersion": "dc685aedcc9422b2b112da3ca50254f7c4369cc024fd122866c3b30fa9ebad0d",
+  "cases": {
+    "direct-artifact-memory": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.79
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.65
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/index::000::aa7272969f90",
+        "score": 0.65
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.64
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.6
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.57
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.57
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.57
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.56
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.56
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.56
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.55
+      }
+    ],
+    "paraphrase-model-swap": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.68
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.65
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.63
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/index::000::aa7272969f90",
+        "score": 0.6
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.6
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.59
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.58
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.58
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.57
+      }
+    ],
+    "synthesis-access-method": [
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.71
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.66
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.65
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.63
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.62
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.62
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.61
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.6
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.6
+      }
+    ],
+    "vague-autonomy": [
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.72
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.7
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.69
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.69
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.69
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.69
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.67
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.66
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.65
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.64
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.63
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.63
+      }
+    ],
+    "misleading-connect-everything": [
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.72
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.69
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.66
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.64
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.64
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.63
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.62
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.62
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.61
+      },
+      {
+        "chunkId": "about::000::36ea8aab4ed2",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.61
+      }
+    ],
+    "persona-definition": [
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.7
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.62
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.59
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.58
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.57
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.57
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.56
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.56
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.56
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.56
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.54
+      }
+    ],
+    "evaluation-boundary": [
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.67
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.66
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.65
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.63
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.63
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.62
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.6
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.6
+      }
+    ],
+    "synthesis-leverage-human": [
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.76
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.73
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.72
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.71
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.7
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.69
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.69
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.68
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.68
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.68
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.67
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.67
+      }
+    ],
+    "follow-up-autonomy-1": [
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.71
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.67
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.67
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.66
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.66
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.62
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.61
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.6
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.6
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.59
+      }
+    ],
+    "follow-up-autonomy-2": [
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.73
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.7
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.7
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.69
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.69
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.65
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.65
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.65
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.65
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.64
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.64
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.63
+      }
+    ],
+    "unsupported-hardware": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.55
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.55
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.54
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.54
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.53
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/index::000::aa7272969f90",
+        "score": 0.53
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.52
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.51
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.51
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.51
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.51
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.51
+      }
+    ],
+    "prompt-injection": [
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.66
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.64
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.6
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.6
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.6
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.59
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/index::000::aa7272969f90",
+        "score": 0.59
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.59
+      },
+      {
+        "chunkId": "about::000::36ea8aab4ed2",
+        "score": 0.59
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.59
+      }
+    ],
+    "holdout-session-continuity": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.67
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.66
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.6
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.6
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/index::000::aa7272969f90",
+        "score": 0.59
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.57
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.57
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.57
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.57
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.56
+      }
+    ],
+    "holdout-shared-context": [
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.65
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.63
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.63
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.61
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.59
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.57
+      }
+    ],
+    "holdout-artifact-over-recap": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.68
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.6
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.6
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.59
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.59
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.59
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.58
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.58
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.56
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.56
+      }
+    ],
+    "holdout-provider-portability": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.67
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.67
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.67
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.66
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.66
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.65
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.65
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.65
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.64
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.63
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.63
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.63
+      }
+    ],
+    "holdout-reach-limit": [
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.69
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.68
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.66
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.66
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.65
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.65
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.65
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.65
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.65
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.64
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.64
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.64
+      }
+    ],
+    "holdout-standard-interface": [
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.65
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.64
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/index::000::aa7272969f90",
+        "score": 0.6
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.59
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.58
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.57
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.57
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.57
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.57
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.56
+      }
+    ],
+    "holdout-procedure-layer": [
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.65
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.62
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.6
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.6
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.59
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.59
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.59
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.59
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.59
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.58
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.57
+      }
+    ],
+    "holdout-specialist-defaults": [
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.66
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.64
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.62
+      },
+      {
+        "chunkId": "index::000::1a7036198e5d",
+        "score": 0.62
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.6
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.6
+      }
+    ],
+    "holdout-bounded-schedule": [
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.59
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.57
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.57
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.57
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.56
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.56
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.56
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.56
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.55
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.55
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.55
+      }
+    ],
+    "holdout-independent-check": [
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.67
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.61
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.6
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.6
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.59
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.58
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.58
+      }
+    ],
+    "holdout-role-transition": [
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.68
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.66
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.64
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.63
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.63
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.62
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/index::000::1e07909c3cfd",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.61
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.61
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.61
+      }
+    ],
+    "holdout-solo-leverage": [
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.68
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.67
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.64
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.64
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.63
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.62
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.62
+      },
+      {
+        "chunkId": "05-leverage-in-practice/what-the-human-still-owns::000::3f306b0bf784",
+        "score": 0.62
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.62
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.62
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.62
+      }
+    ],
+    "holdout-unsupported-nutrition": [
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.49
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.48
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.48
+      },
+      {
+        "chunkId": "05-leverage-in-practice/index::000::d3615e33ea23",
+        "score": 0.47
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.47
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.47
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.46
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.46
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.46
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.46
+      },
+      {
+        "chunkId": "04-autonomy/index::000::0c9d43e9a086",
+        "score": 0.46
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.46
+      }
+    ],
+    "holdout-unsupported-driver": [
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.5
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.5
+      },
+      {
+        "chunkId": "02-connections-mcp/mcp-a-universal-port-for-ai::000::281fb4bca8cf",
+        "score": 0.5
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.49
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.49
+      },
+      {
+        "chunkId": "03-skills-and-personas/skills-teach-ai-how::000::4c2fcd035723",
+        "score": 0.49
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.49
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.49
+      },
+      {
+        "chunkId": "02-connections-mcp/ai-is-only-as-useful-as-what-it-can-reach::000::ed3f0679373f",
+        "score": 0.49
+      },
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.48
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.48
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.48
+      }
+    ],
+    "holdout-prompt-injection": [
+      {
+        "chunkId": "04-autonomy/dont-grade-your-own-homework::000::973bfd5f06f2",
+        "score": 0.63
+      },
+      {
+        "chunkId": "resources/index::000::89c0f20dbd35",
+        "score": 0.6
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-brain-is-the-structure-around-the-model::000::a98efba9f9e2",
+        "score": 0.59
+      },
+      {
+        "chunkId": "03-skills-and-personas/personas-a-specialist-you-shaped::000::bd7026c7bf78",
+        "score": 0.59
+      },
+      {
+        "chunkId": "04-autonomy/ai-that-doesnt-wait::000::bf04c610e48c",
+        "score": 0.59
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/a-knowledge-graph-is-shared-memory::000::ccfcc99c8875",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/the-artifact-is-the-memory::000::b90ca7ade6dc",
+        "score": 0.58
+      },
+      {
+        "chunkId": "04-autonomy/from-operator-to-reviewer::000::f592cf7591d0",
+        "score": 0.58
+      },
+      {
+        "chunkId": "01-memory-and-knowledge-graphs/why-memory-changes-everything::000::a1f46657f802",
+        "score": 0.58
+      },
+      {
+        "chunkId": "02-connections-mcp/index::000::51396af43429",
+        "score": 0.57
+      },
+      {
+        "chunkId": "05-leverage-in-practice/one-person-working-business::000::5b42a265bc96",
+        "score": 0.57
+      },
+      {
+        "chunkId": "start-here::000::ec6e648290a5",
+        "score": 0.57
+      }
+    ]
+  },
+  "latencyMs": {
+    "direct-artifact-memory": 4404,
+    "paraphrase-model-swap": 4447,
+    "synthesis-access-method": 4980,
+    "vague-autonomy": 4444,
+    "misleading-connect-everything": 4393,
+    "persona-definition": 3926,
+    "evaluation-boundary": 4385,
+    "synthesis-leverage-human": 4422,
+    "follow-up-autonomy-1": 4400,
+    "follow-up-autonomy-2": 4417,
+    "unsupported-hardware": 4430,
+    "prompt-injection": 4417,
+    "holdout-session-continuity": 4413,
+    "holdout-shared-context": 3877,
+    "holdout-artifact-over-recap": 4394,
+    "holdout-provider-portability": 17993,
+    "holdout-reach-limit": 4405,
+    "holdout-standard-interface": 3886,
+    "holdout-procedure-layer": 4388,
+    "holdout-specialist-defaults": 17515,
+    "holdout-bounded-schedule": 3893,
+    "holdout-independent-check": 4400,
+    "holdout-role-transition": 4415,
+    "holdout-solo-leverage": 18470,
+    "holdout-unsupported-nutrition": 3980,
+    "holdout-unsupported-driver": 3871,
+    "holdout-prompt-injection": 3869
+  }
+}
